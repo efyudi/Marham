@@ -1,0 +1,105 @@
+<html>
+<title> Lecture 2 </title>
+<head>
+	<style type="text/css">
+		label{	
+		}
+	</style>
+
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"> </script>
+	<script type = "text/javascript">
+		$(document).ready(function()
+		{
+			$('#PINEXT').click(function()
+			{
+				$("#pi").hide();
+				$("#ai").show();		
+			});
+		
+			$('#AINEXT').click(function()
+			{
+				$("#ai").hide();
+				$("#exp").show();		
+			});
+
+			$('#AIPREV').click(function()
+			{
+				$("#ai").hide();
+				$("#pi").show();		
+			});
+
+			$('#EXPPREV').click(function()
+			{
+				$("#exp").hide();
+				$("#ai").show();		
+			});
+
+			$('#EXPSUB').click(function()
+			{
+				$("#exp").hide();
+				$("#done").show();
+			});
+		});
+	</script>
+</head>
+<body>
+
+<h1> Registration FORM </h1>
+
+<fieldset id="pi" style="font-size: 140%"><legend><b> Personal Information </b></legend>
+<table>
+<tr><td><label class="pi"> First Name:    </label></td><td><input type="text" placeholder="Muhammad"></td></tr>
+<tr><td><label class="pi"> Last Name:     </label></td><td><input type="text" placeholder="Arsal"></td></tr>
+<tr><td><label class="pi"> Date of Birth: </label></td><td><input type="date"></td></tr>
+<tr><td><label class="pi"> Cell #         </label></td><td><input type="text" placeholder="+92-333-9533XYZ"></td></tr>
+<tr><td><label class="pi"> Email:         </label></td><td><input type="text" placeholder="arsal_shaikh45@ucp.edu.pk"></td></tr>
+<tr><td><label class="pi"> CNIC #         </label></td><td><input type="text" placeholder="12345-1234567-8"></td></tr>
+<tr><td><label class="pi"> House #        </label></td><td><input type="number"></td></tr>
+<tr><td><label class="pi"> Street #       </label></td><td><input type="number"></td></tr>
+<tr><td><label class="pi"> Phase/Block:   </label></td><td><input type="text"></td></tr>
+<tr><td><label class="pi"> Area:          </label></td><td>
+	<select>
+		<option value="Johar Town">  Johar Town  </option>
+		<option value="Sabzazar">    Sabzazar    </option>
+		<option value="Faisal Town"> Faisal Town </option>
+		<option value="Wapda Town">  Wapda Town  </option>
+	</select>
+</td></tr>
+<tr><td><label class="pi"> City:          </label></td><td>
+	<select>
+		<option value="Lahore">     Lahore     </option>
+		<option value="Multan">     Multan     </option>
+		<option value="Faisalabad"> Faisalabad </option>
+	</select></td></tr>
+<tr><td><input type="button" value="NEXT" id="PINEXT"></td></tr>
+</table>
+</fieldset><br>
+
+<fieldset id="ai" style="font-size: 140%" hidden><legend><b> Academic Information </b></legend>
+<table>
+<tr><td><label class="ai"> Degree/Certificate: </label></td><td>
+	<select>
+		<option value="Matric">       Matric       </option>
+		<option value="Intermediate"> Intermediate </option>
+	</select></td></tr>
+<tr><td><label class="ai"> Obtained Marks: </label></td><td><input type="text" placeholder="Obtained Marks"></td></tr>
+<tr><td><label class="ai"> Total Marks:    </label></td><td><input type="text" placeholder="Total Marks"></td></tr>
+<tr><td><input type="button" value="PREVIOUS" id="AIPREV">
+	    <input type="button" value="NEXT"     id="AINEXT"></td></tr>
+</table>
+</fieldset><br>
+
+<fieldset id="exp" style="font-size: 140%" hidden><legend><b> Work Experience </b></legend>
+<table>
+<tr><td><label class="exp"> Job Title:  </label></td><td><input type="text" placeholder="Manager"></td></tr>
+<tr><td><label class="exp"> Experience: </label></td><td><input type="text" placeholder="2 years"></td></tr>	
+<tr><td><input type="button" value="PREVIOUS" id="EXPPREV">
+	    <input type="button" value="SUBMIT"   id="EXPSUB"></td></tr>
+</table>	
+</fieldset>
+
+<fieldset id="done" hidden>
+	<h3> Form is submitted. </h3>
+</fieldset>
+</body>
+</html
