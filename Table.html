@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<title> Table Calculator </title>
+</head>
+<body>
+	<br>
+	<label>Enter Table Number: &nbsp;</label>
+	 <input type="number" id="input">
+	<br>
+	<label>Range Start: &nbsp;</label>
+	 <input type="number" id="start">
+	<br>
+	<label>Range End: &nbsp;</label>
+	 <input type="number" id="end">
+	<br>		
+	<button onclick="tablePrint()"> Print Table </button>
+	<br><br>
+	<p id = "myParagraph"></p>
+<script type="text/javascript">
+
+	function tablePrint()
+	{
+		var inputValue = document.getElementById("input").value;
+		var startValue = document.getElementById("start").value;
+		var endValue = document.getElementById("end").value;
+		var outputValue = document.getElementById("myParagraph");
+
+		var result;
+		for(var i = startValue; i <= endValue; i++)
+		{
+			result = inputValue*i;
+			outputValue.innerHTML += inputValue + " * " + i + " = " + result + "<br>";  
+		}
+	}
+
+	
+</script>
+
+</body>
+</html>
