@@ -1,0 +1,181 @@
+.firstNav
+{
+	position: fixed; top: 0; width: 100%; z-index: 2;background-color: white; margin:0px;
+}
+.firstNav a:hover
+{
+	color:black;
+}
+.firstNav div
+{
+	margin-top:5px;
+}
+.firstNav ul
+{
+	margin-top:5px;
+}
+.logo:hover
+{
+	color:#0000;
+}
+.logo 
+{
+	color:#134995; font-size: 35px; font-weight: strong; font-family: serif;
+}
+.dropdownHeading
+{
+	color:grey;
+	font-size:17px;
+}
+.ulContents
+{
+	justify-content: center;
+	align-content: center;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+.ulContents li a
+{
+	display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.ulContents1
+{
+	justify-content: center;
+	align-content: center;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+.ulContents1 li a
+{
+	display: block;
+	border-bottom: 1px solid silver;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.buttonJoin
+{
+	background-color: #4CAF50; /* Green */
+	border:none; border-radius:50px;
+	box-shadow: 0px 2px 15px 0 rgba(0,0,0,0.2);
+    color:white; padding:10px 20px; text-align:center; text-decoration:none; display:inline-block; font-size:16px; margin:4px 2px; cursor:pointer;
+
+}
+.buttonJoin:hover
+{
+	box-shadow: 0px 2px 15px 0 rgba(0,0,0,0.2);
+	background-color:#1278CF;
+	color:#F9F9F9;
+}
+.mProper
+{
+	width:100%; margin-left:90px;
+}
+.mProper span
+{
+	font-size: 14px;
+}
+.mProper a
+{
+	color:white; text-align:center; margin:auto; display:block;
+}
+.mProper a:hover
+{
+	color:#134995; text-align:center; margin:auto; display:block;
+}
+#proper
+{
+	display:inline-block; font-size:12px; width:20%; border-left: 1px solid black;
+}
+
+
+#setimg
+{
+	width: 100%;
+}
+#text
+{
+	font-size: 30px;
+	color: #134995;
+}
+#inputs
+{
+	color: white;  
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+   	cursor: pointer;
+   	width: 100%;
+}
+#inputscss
+{
+	font-size: 15px;
+	color: #AEAEAE	;
+}
+#buttonJoin1 
+{
+    background-color: transparent;
+    border: 1px solid #02c782;
+    border-radius: 30px;
+    color: #02c782;
+    padding: 5px 25px 7px 25px;
+    box-shadow: 2px 2px 10px #ccc;
+    font-size: 20px;
+    margin-left: 5px;
+}
+#buttonJoin1:hover 
+{
+    color: #1278CF;
+}
+
+
+
+
+.footer
+{
+	margin-top: 2%;
+	background-image: url("footer-bg2.jpg");
+	background-size:125% 100%;
+	background-repeat: no-repeat;
+	height: 600px;
+}
+.FooterHeading
+{
+	margin-left: 50px;
+	color: white;
+	font-family: serif;
+	font-size: 40px;
+}
+.footerContents
+{
+	margin-left: 10%;
+	width: 70%;
+}
+.footerLink
+{
+	margin-top: 3%;
+}
+.footerLink a
+{
+	font-size: 12.5px;
+}
+.sideLinks
+{
+	font-size: 12px;
+	color: silver;
+	margin-left: 10px;
+}
+#sideLinkList li
+{
+	list-style: none;
+	display: inline;
+
+}
+
