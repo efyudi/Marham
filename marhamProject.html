@@ -2,8 +2,7 @@
 <html>
 <head>
 	<title>Find a Doctor near you</title>
-	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -12,26 +11,26 @@
 </head>
 <body>
 
-	<nav class="navbar bg-light text-center firstNav" >
+	<nav class="navbar bg-light text-center firstNav">
 		<div class="container-fluid">
 			<div class="navbar-header" style="padding: 0px 100px; margin-left: 25px">
 				<a class="navbar-brand logo" href="#">MARHAM</a>
 			</div>
 			<ul class="nav navbar-nav">
 				<li class="dropdown" ><a class="dropdown-toggle dropdownHeading" data-toggle="dropdown" href="#">Find a Doctor<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li id="allSpecialists"><a href="#">All Specialists</a></li><hr>
-						<li id="allDoctors"><a href="#">All Doctors</a></li><hr>
-						<li id="allSurgeries"><a href="#">All Surgeries</a></li><hr>
-						<li id="allSpecialOffers"><a href="#">All Special Offers</a></li><hr>
-						<li id="allDiseases"><a href="#">All Diseases</a></li><hr>
-						<li id="allServices"><a href="#">All Services</a></li><hr>
-						<li id="allSurgeons"><a href="#">All Surgeons</a></li><hr>
+					<ul class="dropdown-menu ulContents1">
+						<li id="allSpecialists"><a href="#">All Specialists</a></li>
+						<li id="allDoctors"><a href="#">All Doctors</a></li>
+						<li id="allSurgeries"><a href="#">All Surgeries</a></li>
+						<li id="allSpecialOffers"><a href="#">All Special Offers</a></li>
+						<li id="allDiseases"><a href="#">All Diseases</a></li>
+						<li id="allServices"><a href="#">All Services</a></li>
+						<li id="allSurgeons"><a href="#">All Surgeons</a></li>
 						<li id="allHospitals"><a href="#">All Hospitals</a></li>
 					</ul>
 				</li>
 				<li class="dropdown "><a class="dropdown-toggle dropdownHeading" data-toggle="dropdown" href="#">Online Consultations<span class="caret"></span></a>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu ulContents">
 						<li id="onlineConsultation"><a href="#">Online Consultation</a></li><hr>
 						<li id="onlineC"><a href="#">Gp Online Clinic</a></li><hr>
 						<li id="onlineCM"><a href="#">CureMen Online Clinic</a></li><hr>
@@ -41,7 +40,7 @@
 					</ul>
 				</li>
 				<li class="dropdown"><a class="dropdown-toggle dropdownHeading" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu ulContents">
 						<li id="whatIsMarham"><a href="#">What is Marham?</a></li><hr>
 						<li id="marhamForDoctors"><a href="#">Marham for Doctors</a></li><hr>
 						<li id="marhamForPatients"><a href="#">Marham for Patients</a></li><hr>
@@ -60,39 +59,273 @@
 		</div>
 	</nav>
 
-	<nav class="navbar secondNav">
+	<nav class="navbar secondNav" style="padding-top: 60px; position: relative; z-index: 1">
 		<div class="container-fluid" style="background-color: #134995;">
-			<div class="container">
-				<ul class="nav proper" >
+			<div class="container" >
+				<ul class="nav mProper">
 					
-					<li class=" dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" ><span class="glyphicon glyphicon-envelope"></span> MESSAGES <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li ><a href="#">Random</a></li>
-							<hr>
-							<li ><a href="#">Messages</a></li>
+					<li class="dropdown" id="proper"><a class="dropdown-toggle" data-toggle="dropdown" href="#" ><span class="glyphicon glyphicon-envelope"></span> MESSAGES <span class="caret"></span></a>
+						<ul class="dropdown-menu ulContents">
+							<li class="navList"><a href="#">Random</a></li>
+							<li class="navList"><a href="#">Messages</a></li>
 						</ul>
 					</li>
 					
 					
-					<li class=" dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-map-marker"></span> PAKISTAN <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li id="lahore"><a href="#"></span>Lahore</a></li>
-							<hr>
-							<li id="karachi"><a href="#"></span>Karachi</a></li>
-							<hr>
-							<li id="islamabad"><a href="#"></span>Islamabad</a></li>
+					<li class="dropdown "id="proper"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-map-marker"></span> PAKISTAN <span class="caret"></span></a>
+						<ul class="dropdown-menu ulContents">
+							<li id="lahore" class="navList"><a href="#">Lahore</a></li>
+							<li id="karachi" class="navList"><a href="#">Karachi</a></li>
+							<li id="islamabad" class="navList"><a href="#">Islamabad</a></li>
 						</ul>
 					</li>
 					
 					
-					<li><a href="#" ><span class="glyphicon glyphicon-earphone"></span> CALL </a></li>
+					<li id="proper"><a href="#" ><span class="glyphicon glyphicon-earphone"></span> CALL </a></li>
 					
 					
-					<li><a href="#" style="border-right: 1px solid black"><span class="glyphicon glyphicon-user"></span> LOGIN </a></li>
+					<li id="proper"><a href="#" style="border-right: 1px solid black"><span class="glyphicon glyphicon-user"></span> LOGIN </a></li>
 					
 				</ul>
 			</div>
 		</div>
 	</nav>
+	<div class="container-fluid" >
+		<div class="container" style=" height: 500px; justify-content: center;align-content: center;">
+			<div class="row text-center slogan"><label class="textColor">Find, Book or Consult </label><label style="color: #00cc7a">&nbspDoctor&nbsp</label><label class="textColor"> Online!</label></div>	
+				<div class="card">
+					<div class="row text-center genericRow" >
+						<div class="container-fluid">
+							<div class="row text-center genericCol">
+								<!--<div class="col-sm-6 col-lg-6 col-md-6 text-center genericCol"><button class="btn">Choose Speciality</button></div>
+								<div class="col-sm-6 col-lg-6 col-md-6 text-center genericCol"><button class="btn">Search Doctor</button></div>-->
+								
+									<button class="btn active">Choose Specialist</button>
+									<button class="btn">Search Doctor</button>
+								</div>
+						</div>			
+					</div>
+
+					<div class="row text-center genericRow" >
+						<div class="col-sm-10 col-md-10 col-lg-10 genericCol1">
+							<select class = "form-control searchBar">
+								<option >All Pakistan</option>
+								<option>Lahore</option>
+								<option>Karachi</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="row text-center genericRow" >
+						<div class="col-sm-10 col-md-10 col-lg-10 genericCol1">
+							<input class = "form-control" type="text" style="width: 80%; margin-left: 10%" placeholder="Type Any Specialty Name to Search">
+						</div>
+					</div>
+
+					<div class="row text-center genericRow" >
+						<div class="col-sm-10 col-md-10 col-lg-10 form-control1 genericCol1">
+							<div class="vertical-menu">
+								<a href="#"><span class="english" style="float: left;">Allergy Specialist</span><span class="urdu" style="float: right; color: green">الرجی کا ڈاکٹر</span></a>
+								<a href="#"><span class="english" style="float: left;">Andrologist</span></a>
+								<a href="#"><span class="english" style="float: left;">Androurologist</span><span class="urdu" style="float: right; color: green">مردانہ بانجھ پن</span></a>
+								<a href="#"><span class="english" style="float: left;">Anesthetist</span><span class="urdu" style="float: right; color: green">بےہوشی کا ڈاکٹر</span></a>
+								<a href="#"><span class="english" style="float: left;">Audiologist</span><span class="urdu" style="float: right; color: green">سننے کے مسائل</span></a>
+								<a href="#"><span class="english" style="float: left;">Bone Marrow</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<div style="background-color: #f2f2f2">
+		<div class="container-fluid" style="background-color: #f2f2f2">
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-md-4 col-lg-4 form-control2" style="background-color: white;">
+						<h3>Book Appointment</h3>
+						<div class="heading-divider"></div>
+						<ul style="margin-left: -32px">
+							<li class="row listItemHolder">
+								<a href="#">
+									<div class="col-sm-3 col-md-3 col-lg-3 listItems" ><img style="margin-left: -18px" src="css_sprites.png"></div>
+									<div class="col-sm-8 col-md-8 col-lg-8 listItems">
+										<div class="row">General Physician</div>
+										<div class="row"><img src="stars.png"><span class="reviews"> (101 Reviews)</span></div>
+										<div class="row ">
+											<ul id="menuu" style="list-style: none; margin-left: -40px;">
+												<li><img style="border-radius: 50%;" src="doc1.png"></li>
+												<li><img style="border-radius: 50%;" src="doc2.png"></li>
+												<li><img style="border-radius: 50%;" src="doc3.png"></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-sm-1 col-md-1 col-lg-1 listItemsArrow" style="font-size: 18px;">&rsaquo;</div>
+								</a>
+							</li>
+							<li class="row listItemHolder" >
+								<a href="#">
+									<div class="col-sm-3 col-md-3 col-lg-3 listItems"><img style="margin-left: -18px"src="css_sprites3.png"></div>
+									<div class="col-sm-8 col-md-8 col-lg-8 listItems">
+										<div class="row">Dentist</div>
+										<div class="row"><img src="stars.png"><span class="reviews"> (92 Reviews)</span></div>
+										<div class="row ">
+											<ul id="menuu" style="list-style: none; margin-left: -40px;">
+												<li><img style="border-radius: 50%;" src="doc2.png"></li>
+												<li><img style="border-radius: 50%;" src="doc3.png"></li>
+												<li><img style="border-radius: 50%;" src="doc1.png"></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-sm-1 col-md-1 col-lg-1 listItemsArrow" style="font-size: 18px;">&rsaquo;</div>
+								</a>
+							</li>
+							<li class="row listItemHolder">
+								<a href="#">
+									<div class="col-sm-3 col-md-3 col-lg-3 listItems"><img style="margin-left: -18px"src="css_sprites2.png"></div>
+									<div class="col-sm-8 col-md-8 col-lg-8 listItems">
+										<div class="row">Gynecologist</div>
+										<div class="row"><img src="stars.png"><span class="reviews"> (127 Reviews)</span></div>
+										<div class="row ">
+											<ul id="menuu" style="list-style: none; margin-left: -40px;">
+												<li><img style="border-radius: 50%;" src="doc1.png"></li>
+												<li><img style="border-radius: 50%;" src="doc3.png"></li>
+												<li><img style="border-radius: 50%;" src="doc2.png"></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-sm-1 col-md-1 col-lg-1 listItemsArrow" style="font-size: 18px;">&rsaquo;</div>
+								</a>
+							</li>
+						</ul>
+						<div class="row genericCol1 "><a class="Link">VIEW ALL CATEGORIES (A-Z)<span>&rarr;</span></a></div>
+					</div>	
+					<div class="col-sm-4 col-md-4 col-lg-4 form-control2" style="background-color: white;margin-left: 30px">
+						<h3>Marham Online Consultation</h3>
+						<div class="heading-divider"></div>
+						<iframe width="100%" height="70%" src="https://www.youtube.com/watch?v=R9ENzvhRgqI"></iframe>
+						<!--<div data-id="R9ENzvhRgqI"><img src="hqdefault.jpg"><div class="play"></div></div>-->
+						<div class="row genericCol1"><a class="Link">LEARN MORE<span>&rarr;</span></a></div>
+					</div>
+				</div>
+			</div>
+
+		
+			<div class="conatiner">
+				<div class="row text-center">
+					<div class="col-sm-12 col-md-12 col-lg-12 form-control3" >
+						<h3 class="question" >Are you a doctor, willing to join Marham?</h3>
+						<input class="button buttonJoin" style="margin-top: 10px" type="button" value="Learn More">
+						<p></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<footer class="footer">
+			<div class="conatiner footerContents">
+				<div class="row" style="width: 80%">
+					<h3 class="FooterHeading">We believe in sharing the burden of those fighting a disease!</h3>
+				</div>
+				<div class="row footerLink">
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<ul style="list-style: none">
+
+							<li><a href="#">All doctors in lahore</a></li>
+							<li><a href="#">Best Gynecologist in Lahore</a></li>
+							<li><a href="#">Best Gastroenterologist in Lahore</a></li>
+							<li><a href="#">Best Orthopedic Surgeon in Lahore</a></li>
+							<li><a href="#">Best Neuro Physician in Lahore</a></li>
+							<li><a href="#">Best General Physician in Lahore</a></li>
+							<li><a href="#">Best Cardiologist in Lahore</a></li>
+							<li><a href="#">Best Psychiatrist in Lahore</a></li>
+							<li><a href="#">Best Neurosurgeon in Lahore</a></li>
+							<li><a href="#">Best Pulmonologist in Lahore</a></li>
+							<li><a href="#">Best Dentist in Lahore</a></li>
+							<li><a href="#">Best Dermatologist in Lahore</a></li>
+							<li><a href="#">All Hospitals in Lahore</a></li>
+						</ul>
+
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<ul style="list-style: none">
+							<li><a href="#">All doctors in lahore</a></li>
+							<li><a href="#">Best Gynecologist in Lahore</a></li>
+							<li><a href="#">Best Gastroenterologist in Lahore</a></li>
+							<li><a href="#">Best Orthopedic Surgeon in Lahore</a></li>
+							<li><a href="#">Best Neuro Physician in Lahore</a></li>
+							<li><a href="#">Best General Physician in Lahore</a></li>
+							<li><a href="#">Best Cardiologist in Lahore</a></li>
+							<li><a href="#">Best Psychiatrist in Lahore</a></li>
+							<li><a href="#">Best Neurosurgeon in Lahore</a></li>
+							<li><a href="#">Best Pulmonologist in Lahore</a></li>
+							<li><a href="#">Best Dentist in Lahore</a></li>
+							<li><a href="#">Best Dermatologist in Lahore</a></li>
+							<li><a href="#">All Hospitals in Lahore</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<ul style="list-style: none">
+							<li><a href="#">All doctors in lahore</a></li>
+							<li><a href="#">Best Gynecologist in Lahore</a></li>
+							<li><a href="#">Best Gastroenterologist in Lahore</a></li>
+							<li><a href="#">Best Orthopedic Surgeon in Lahore</a></li>
+							<li><a href="#">Best Neuro Physician in Lahore</a></li>
+							<li><a href="#">Best General Physician in Lahore</a></li>
+							<li><a href="#">Best Cardiologist in Lahore</a></li>
+							<li><a href="#">Best Psychiatrist in Lahore</a></li>
+							<li><a href="#">Best Neurosurgeon in Lahore</a></li>
+							<li><a href="#">Best Pulmonologist in Lahore</a></li>
+							<li><a href="#">Best Dentist in Lahore</a></li>
+							<li><a href="#">Best Dermatologist in Lahore</a></li>
+							<li><a href="#">All Hospitals in Lahore</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<ul style="list-style: none">
+							<li><a href="#">All doctors in lahore</a></li>
+							<li><a href="#">Best Gynecologist in Lahore</a></li>
+							<li><a href="#">Best Gastroenterologist in Lahore</a></li>
+							<li><a href="#">Best Orthopedic Surgeon in Lahore</a></li>
+							<li><a href="#">Best Neuro Physician in Lahore</a></li>
+							<li><a href="#">Best General Physician in Lahore</a></li>
+							<li><a href="#">Best Cardiologist in Lahore</a></li>
+							<li><a href="#">Best Psychiatrist in Lahore</a></li>
+							<li><a href="#">Best Neurosurgeon in Lahore</a></li>
+							<li><a href="#">Best Pulmonologist in Lahore</a></li>
+							<li><a href="#">Best Dentist in Lahore</a></li>
+							<li><a href="#">Best Dermatologist in Lahore</a></li>
+							<li><a href="#">All Hospitals in Lahore</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row" style="margin-top: 5%;">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<ul id="sideLinkList">
+							<li><a href="#" class="sideLinks">About Us</a></li>
+							<li><a href="#" class="sideLinks">Careers</a></li>
+							<li><a href="#" class="sideLinks">Privacy</a></li>
+							<li><a href="#"class="sideLinks">Patients</a></li>
+							<li><a href="#"class="sideLinks">Doctors</a></li>
+							<li><a href="#"class="sideLinks">Find a Doctor</a></li>
+							<li><a href="#"class="sideLinks">Find a Surgeon</a></li>
+							<li><a href="#"class="sideLinks">Find Doctor via Disease</a></li>
+							<li><a href="#"class="sideLinks">Find Doctor via Service</a></li>
+							<li><a href="#"class="sideLinks">SiteMap</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	
+
+
+
 </body>
 </html>
