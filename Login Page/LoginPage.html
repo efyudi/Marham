@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Account With MARHAM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="LoginPage.css">
+</head>
+<body>
+
+	<!----------------------------------HEADER NAVBAR------------------------------>
+
+	<nav class="navbar bg-light text-center firstNav">
+		<div class="container-fluid">
+			<div class="navbar-header" style="padding: 0px 100px; margin-left: 25px">
+				<a class="navbar-brand logo" href="#">MARHAM</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="dropdown" ><a class="dropdown-toggle dropdownHeading" data-toggle="dropdown" href="#">Find a Doctor<span class="caret"></span></a>
+					<ul class="dropdown-menu ulContents1">
+						<li id="allSpecialists"><a href="#">All Specialists</a></li>
+						<li id="allDoctors"><a href="#">All Doctors</a></li>
+						<li id="allSurgeries"><a href="#">All Surgeries</a></li>
+						<li id="allSpecialOffers"><a href="#">All Special Offers</a></li>
+						<li id="allDiseases"><a href="#">All Diseases</a></li>
+						<li id="allServices"><a href="#">All Services</a></li>
+						<li id="allSurgeons"><a href="#">All Surgeons</a></li>
+						<li id="allHospitals"><a href="#">All Hospitals</a></li>
+					</ul>
+				</li>
+				<li class="dropdown "><a class="dropdown-toggle dropdownHeading" data-toggle="dropdown" href="#">Online Consultations<span class="caret"></span></a>
+					<ul class="dropdown-menu ulContents">
+						<li id="onlineConsultation"><a href="#">Online Consultation</a></li><hr>
+						<li id="onlineC"><a href="#">Gp Online Clinic</a></li><hr>
+						<li id="onlineCM"><a href="#">CureMen Online Clinic</a></li><hr>
+						<li id="onlinePCOS"><a href="#">PCOS Online Clinic</a></li><hr>
+						<li id="onlineP"><a href="#">Psychology Online Clinic</a></li><hr>
+						<li id="onlineWL"><a href="#">Weight Loss Online Clinic</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a class="dropdown-toggle dropdownHeading" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+					<ul class="dropdown-menu ulContents">
+						<li id="whatIsMarham"><a href="#">What is Marham?</a></li><hr>
+						<li id="marhamForDoctors"><a href="#">Marham for Doctors</a></li><hr>
+						<li id="marhamForPatients"><a href="#">Marham for Patients</a></li><hr>
+						<li id="contactUs"><a href="#">Contact Us</a></li><hr>
+						<li id="publications"><a href="#">Publications</a></li>
+					</ul>
+				</li>
+				<li ><a href="#" class="dropdownHeading">Forum</a></li>
+
+				<li><a href="#" class="dropdownHeading">Health Blog</a></li>
+				
+			</ul>
+			<div class="navbar-header"></div>
+				<input class="button buttonJoin"  style="margin-top: 7px" type="button" value="Join as Doctor"><a href="#"></a>
+			</div>
+		</div>
+	</nav>
+
+	<nav class="navbar secondNav" style="padding-top: 60px; position: relative; z-index: 1">
+		<div class="container-fluid" style="background-color: #134995;">
+			<div class="container" >
+				<ul class="nav mProper">
+					
+					<li class="dropdown" id="proper"><a class="dropdown-toggle" data-toggle="dropdown" href="#" ><span class="glyphicon glyphicon-envelope"></span> MESSAGES <span class="caret"></span></a>
+						<ul class="dropdown-menu ulContents">
+							<li class="navList"><a href="#">Random</a></li>
+							<li class="navList"><a href="#">Messages</a></li>
+						</ul>
+					</li>
+					
+					
+					<li class="dropdown "id="proper"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-map-marker"></span> PAKISTAN <span class="caret"></span></a>
+						<ul class="dropdown-menu ulContents">
+							<li id="lahore" class="navList"><a href="#">Lahore</a></li>
+							<li id="karachi" class="navList"><a href="#">Karachi</a></li>
+							<li id="islamabad" class="navList"><a href="#">Islamabad</a></li>
+						</ul>
+					</li>
+					
+					
+					<li id="proper"><a href="#" ><span class="glyphicon glyphicon-earphone"></span> CALL </a></li>
+					
+					
+					<li id="proper"><a href="#" style="border-right: 1px solid black"><span class="glyphicon glyphicon-user"></span> LOGIN </a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-----------------------------------LOGIN PAGE------------------------------------->
+
+	<div class="container" style="background-color: white">
+		<div class = "card text-center">
+			<img id="setimg" src="doctor-illustration.jpg" alt="background Pic">
+			<br><br>	
+			<label id = "text"> Join As Doctor </label> 
+			<br><br>
+			<a href="#" style="color: green; font-size: 17px">Home</a> 
+			<label id="inputscss"> &nbsp;/ Join As Doctor</label>
+			<p id="inputscss">Join the largest Healthcare Network of Pakistan. We add only PMDC registered doctor. Only apply if you are registered with PMDC. Exemption for physiotherapist or psychologist.</p>
+		</div>
+	</div><br><br>
+
+	<div class="container">
+		<div class="row">
+			<div class="card" style="width: 60%; margin-left: 20%">
+				<div class="row" >
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<p id = "inputscss">Name *</p>
+						<input class="form-control" type="text" >							
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4" >
+						<p id = "inputscss">Email *</p>
+						<input class="form-control" type="text" >
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4" >
+						<p id = "inputscss">Phone *</p>
+						<input class="form-control" type="text" >
+					</div>
+				</div><br>
+				
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<p id = "inputscss">City *</p>
+						<input class="form-control" type="text" >
+					</div>
+				</div><br>
+				
+				<div class="row" >
+					<div class="col-lg-4 col-md-4 col-sm-4" >
+						<p id = "inputscss">Designation</p>
+						<input class="form-control" type="text" >
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4" >
+						<p id = "inputscss">Speciality</p>
+						<input class="form-control" type="text" >
+					</div>
+					
+					<div class="col-lg-4 col-md-4 col-sm-4" >
+						<p id = "inputscss">PMDC</p>
+						<input class="form-control" type="text" >
+					</div>
+				</div><br>
+				
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<p id = "inputscss">Message</p>
+						<textarea class="form-control" id="message" rows="3" style="margin-top: 0px; margin-bottom: 0px; resize: vertical; height: 78px;"></textarea>
+					</div>
+				</div><br>
+
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<p id = "inputscss">Do you want to grow your practice? (more patient leads)</p>
+					</div>		
+				</div>
+
+				<div class="form-check form-check-inline">
+					<input type="checkbox">
+					<label id = "inputscss">Yes</label>
+					<input type="checkbox" style="margin-left: 12px">
+					<label id = "inputscss">No</label>		
+				</div><br>
+
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<p id = "inputscss">Do you want to grow your practice? (more patient leads)</p>
+					</div>		
+				</div>
+
+				<div class="form-check form-check-inline">
+					<input type="checkbox">
+					<label id = "inputscss">Yes</label>
+					<input type="checkbox" style="margin-left: 12px">
+					<label id = "inputscss">No</label>		
+				</div><br>
+			
+				<button type="submit" id="buttonJoin1">Next</button><a href="#"></a>
+			</div>
+		</div>
+	</div>
+
+	<!---------------------------------FOOTER------------------------------------>
+	
+	<div style="background-color: #f2f2f2">
+		<footer class="footer">
+			<div class="conatiner footerContents">
+				<div class="row" style="width: 80%">
+					<h3 class="FooterHeading">We believe in sharing the burden of those fighting a disease!</h3>
+				</div>
+				<div class="row footerLink">
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<ul style="list-style: none">
+
+							<li><a href="#">All doctors in lahore</a></li>
+							<li><a href="#">Best Gynecologist in Lahore</a></li>
+							<li><a href="#">Best Gastroenterologist in Lahore</a></li>
+							<li><a href="#">Best Orthopedic Surgeon in Lahore</a></li>
+							<li><a href="#">Best Neuro Physician in Lahore</a></li>
+							<li><a href="#">Best General Physician in Lahore</a></li>
+							<li><a href="#">Best Cardiologist in Lahore</a></li>
+							<li><a href="#">Best Psychiatrist in Lahore</a></li>
+							<li><a href="#">Best Neurosurgeon in Lahore</a></li>
+							<li><a href="#">Best Pulmonologist in Lahore</a></li>
+							<li><a href="#">Best Dentist in Lahore</a></li>
+							<li><a href="#">Best Dermatologist in Lahore</a></li>
+							<li><a href="#">All Hospitals in Lahore</a></li>
+						</ul>
+
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<ul style="list-style: none">
+							<li><a href="#">All doctors in lahore</a></li>
+							<li><a href="#">Best Gynecologist in Lahore</a></li>
+							<li><a href="#">Best Gastroenterologist in Lahore</a></li>
+							<li><a href="#">Best Orthopedic Surgeon in Lahore</a></li>
+							<li><a href="#">Best Neuro Physician in Lahore</a></li>
+							<li><a href="#">Best General Physician in Lahore</a></li>
+							<li><a href="#">Best Cardiologist in Lahore</a></li>
+							<li><a href="#">Best Psychiatrist in Lahore</a></li>
+							<li><a href="#">Best Neurosurgeon in Lahore</a></li>
+							<li><a href="#">Best Pulmonologist in Lahore</a></li>
+							<li><a href="#">Best Dentist in Lahore</a></li>
+							<li><a href="#">Best Dermatologist in Lahore</a></li>
+							<li><a href="#">All Hospitals in Lahore</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<ul style="list-style: none">
+							<li><a href="#">All doctors in lahore</a></li>
+							<li><a href="#">Best Gynecologist in Lahore</a></li>
+							<li><a href="#">Best Gastroenterologist in Lahore</a></li>
+							<li><a href="#">Best Orthopedic Surgeon in Lahore</a></li>
+							<li><a href="#">Best Neuro Physician in Lahore</a></li>
+							<li><a href="#">Best General Physician in Lahore</a></li>
+							<li><a href="#">Best Cardiologist in Lahore</a></li>
+							<li><a href="#">Best Psychiatrist in Lahore</a></li>
+							<li><a href="#">Best Neurosurgeon in Lahore</a></li>
+							<li><a href="#">Best Pulmonologist in Lahore</a></li>
+							<li><a href="#">Best Dentist in Lahore</a></li>
+							<li><a href="#">Best Dermatologist in Lahore</a></li>
+							<li><a href="#">All Hospitals in Lahore</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<ul style="list-style: none">
+							<li><a href="#">All doctors in lahore</a></li>
+							<li><a href="#">Best Gynecologist in Lahore</a></li>
+							<li><a href="#">Best Gastroenterologist in Lahore</a></li>
+							<li><a href="#">Best Orthopedic Surgeon in Lahore</a></li>
+							<li><a href="#">Best Neuro Physician in Lahore</a></li>
+							<li><a href="#">Best General Physician in Lahore</a></li>
+							<li><a href="#">Best Cardiologist in Lahore</a></li>
+							<li><a href="#">Best Psychiatrist in Lahore</a></li>
+							<li><a href="#">Best Neurosurgeon in Lahore</a></li>
+							<li><a href="#">Best Pulmonologist in Lahore</a></li>
+							<li><a href="#">Best Dentist in Lahore</a></li>
+							<li><a href="#">Best Dermatologist in Lahore</a></li>
+							<li><a href="#">All Hospitals in Lahore</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row" style="margin-top: 5%;">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<ul id="sideLinkList">
+							<li><a href="#" class="sideLinks">About Us</a></li>
+							<li><a href="#" class="sideLinks">Careers</a></li>
+							<li><a href="#" class="sideLinks">Privacy</a></li>
+							<li><a href="#"class="sideLinks">Patients</a></li>
+							<li><a href="#"class="sideLinks">Doctors</a></li>
+							<li><a href="#"class="sideLinks">Find a Doctor</a></li>
+							<li><a href="#"class="sideLinks">Find a Surgeon</a></li>
+							<li><a href="#"class="sideLinks">Find Doctor via Disease</a></li>
+							<li><a href="#"class="sideLinks">Find Doctor via Service</a></li>
+							<li><a href="#"class="sideLinks">SiteMap</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+<!--------------------------------------------THE END--------------------------------------->
+</body>
+</html>
